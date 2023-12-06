@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamila Langer - Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ephesis:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap">
+    <style>
+      body {
+        font-family: 'Raleway', serif;
+        font-weight: 400;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background: white;
+
+      }
+
+      .font-family {
+        font-family: 'Raleway', serif;
+      }
+
+      .font-family-sub-header {
+        font-family: 'Raleway', serif;
+      }
+
+
+      nav.navbar {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: right;
+        position: relative;
+      }
+
+      .white-square {
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        border: 2px solid white;
+        position: absolute;
+        top: 10;
+        left: 9;
+        transform: rotate(45deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .initials {
+        color: lightblue;
+        font-weight: bold;
+        position: absolute;
+        top: 12px;
+        left: 9px;
+        font-family: 'Ephesis', serif;
+        font-size: 15;
+
+
+
+      }
+
+
+      nav.navbar a {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        font-size: 15;
+      }
+
+      header {
+        background-image: url('header.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 75px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+        font-size: 55px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+      }
+
+
+      .subtitle {
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: lightblue;
+      }
+
+      .container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        font-size: 28px;
+        font-family: 'Playfair Display', serif;
+        color: #1c1c1c;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: black;
+      }
+
+      .img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 10px;
+
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background-color: #1c1c1c;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .button {
+        background-color: black;
+        font-size: 14px;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: lightblue;
+      }
+
+      header p,
+      footer p {
+        color: lightblue;
+      }
+
+      .welcome-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .welcome-text {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .welcome-text h2 {
+        font-size: 28px;
+        color: #1c1c1c;
+      }
+
+      .welcome-text img {
+        vertical-align: middle;
+        margin-top: -2px;
+        border-radius: 0px;
+        border: 0px;
+      }
+
+      .img {
+        max-width: 100%;
+        height: auto;
+        border: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      .about-paragraph {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+      }
+
+      .welcome-blurb {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+      }
+
+      .parent {
+        display: flex;
+        align-items: center;
+      }
+
+      .image-logo {
+        width: 200px;
+        border: none;
+        margin-right: 1rem;
+      }
+
+      .img-squareCollector {
+        width: 200px;
+        border: none;
+        margin-right: 1rem;
+      }
+
+      .img-squareCollector2 {
+        width: 214px;
+        border: none;
+        margin-right: 1rem;
+      }
+
+      .portfolio {
+        display: flex;
+        align-items: center;
+      }
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="white-square"></div>
+      <span class="initials">KL</span>
+      <a href="#section2">About</a>
+      <a href="#section3">Portfolio</a>
+      <a href="#section4">Contact</a>
+    </nav>
+
+    <header>
+      <h1 class="font-family">Kamila Langer</h1>
+      <p class="subtitle">UX/UI designer in training . . .</p>
+    </header>
+
+    <div class="container" id="section1">
+      <div class="welcome-container">
+        <img src="picture.JPG" alt="your-image" style="max-width: 30%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); border-radius: 0%; border: 3px solid lightblue; margin-right: 20px;">
+        <div class="welcome-text">
+          <h2 class="font-family-sub-header">Hi <img src="hand.png" alt="Waving Hand" style="max-width: 30px; vertical-align: middle; margin-top: -2px;"> it's nice to meet you!</h2>
+          <p class="welcome-blurb"> I'm currently a student at the University of Waterloo studying Global Business and Digital Arts</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 id="section2" #section2 class="font-family-sub-header"> About</h2>
+      <p class="about-paragraph">Welcome to my world of creativity and design. My journey has been guided by a passion for the intersection of business and technology, leading me to the unique program at the University of Waterloo.
+
+        I excel in marketing and interpersonal skills within the business realm and aspire to be part of a team that allows me to flourish my networking skills through traveling. Technology has always sparked my curiosity, and I enjoy finding solutions to problems and projects through its application.
+
+        In my professional journey, I aim to be a leader who values collaboration and teamwork, bringing people together to achieve shared success. Whether it's marketing, technology, or any other endeavor, my goal is to lead by example and inspire those around me to excel.
+
+        Join me on this journey where creativity, design, and a desire for positive change converge, shaping a brighter future through the fusion of business and technology.</p>
+    </div>
+    <div class="container" id="section3">
+      <h2 class="font-family-sub-header"> Portfolio</h2>
+      <p class="about-paragraph">Explore my latest design projects and works of art.</p>
+      <div class="portfolio">
+        <img class="image-logo" src="logo.png"> </img>
+        <img class="img-squareCollector" src="squareCollector1.png"> </img>
+        <img class="img-squareCollector2" src="squareCollector2.png"> </img>
+      </div>
+
+    </div>
+
+    <div class="container" id="section4">
+      <h2 class="font-family-sub-header">Contact Me</h2>
+      <p class="about-paragraph">Let's collaborate on a creative project. Connect with me:</p>
+      <div class="parent">
+        <button class="button"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><span class="font-family-sub-header">Email</span></a></button>
+        <div class="linkedin-icon-container">
+          <a href="https://ca.linkedin.com/in/kamila-langer-67b097295" target="_blank">
+            <img src="linkedin.webp" alt="LinkedIn" style="max-width: 64px; border-radius: 0%; position: sticky;">
+          </a>
+        </div>
+        <div class="linkedin-icon-container">
+          <a href="https://github.com/langerkk" target="_blank">
+            <img src="github.png" alt="LinkedIn" style="max-width: 43px; border-radius: 0%; position: sticky;">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content-container">
+
+      <footer>
+        <p class="font-family-sub-header">Visit my program's website: <a class="footer-link" href="https://uwaterloo.ca/stratford-school-of-interaction-design-and-business/global-business-and-digital-arts" target="_blank">Global Business and Digital Arts</a> </p>
+      </footer>
+
+  </body>
+</html>
